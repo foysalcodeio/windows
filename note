@@ -1,2 +1,5 @@
 windows utility:
 iwr -useb https://christitus.com/win | iex
+
+windows active
+irm https://get.activated.win |iex
