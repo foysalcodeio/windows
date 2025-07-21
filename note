@@ -15,22 +15,38 @@ regidit ->HKEY_LOCAL_Machine -> system -> setup -> new -> key
 									     -> BypassSecureBootCheck -> given value 1
 
 
-network bypass : OOBE\BYPASSNRO
 
-software removing tool : run -> mrt
+# network bypass : OOBE\BYPASSNRO
+# software removing tool : run -> mrt
+# MBR (master boot record ) : its contain bios system
+# GPT (graphicsal boot partition) : its contain UEFI system or bios-uefi system
 
-MBR (master boot record ) : its contain bios system
 
-GPT (graphicsal boot partition) : its contain UEFI system or bios-uefi system
+mbr to gpt
+-----------
+1. diskpart
+2. list disk
+3. select disk 0
+4. clean
+5. convert GPT
+6. exit
+7. exit
 
+
+keep knowledge
+--------------------
+	    [DISK MODE] - changleble	     |		[BIOS MODE] - Not changeble
+old system : MBR			-----------> 	LEGACY (old) OR UEFI (new)
+new system : GPT 			-----------> 	UEFI
+	
 
 windows setup:
 ----------------------
 Preplan:
 1. Ensure your BIOS/UEFI settings are configured to boot from USB
-2. rename c drive
+2. rename c drive 
 3. look and memorize c drive space
-4. look drive or Disk management 
+4. look drive or look c Disk management what are build gpt or mbr ---> target UEFI System
 
 
 
