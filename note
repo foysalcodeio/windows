@@ -3,3 +3,53 @@ iwr -useb https://christitus.com/win | iex
 
 windows active
 irm https://get.activated.win |iex
+
+
+bios mode setting : shutdown /r /fw /t
+
+windows 11 supported
+--------------------------
+regidit ->HKEY_LOCAL_Machine -> system -> setup -> new -> key
+						-> new ->DWORD (32bit) Value -> BypassTPMCheck -> given value 1
+									     -> BypassRAMCheck -> given value 1
+									     -> BypassSecureBootCheck -> given value 1
+
+
+network bypass : OOBE\BYPASSNRO
+
+software removing tool : run -> mrt
+
+MBR (master boot record ) : its contain bios system
+
+GPT (graphicsal boot partition) : its contain UEFI system or bios-uefi system
+
+
+windows setup:
+----------------------
+Preplan:
+1. Ensure your BIOS/UEFI settings are configured to boot from USB
+2. rename c drive
+3. look and memorize c drive space
+4. look drive or Disk management 
+
+
+
+
+
+windows setup next step
+-------------------------
+1. install driver
+
+
+
+
+
+
+
+
+
+
+
+
+
+
