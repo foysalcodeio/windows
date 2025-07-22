@@ -1,0 +1,61 @@
+Your PC needs to be repaired Windows 10/11 - Fix UEFI Won't Boot
+full video : https://www.youtube.com/watch?v=F2djEpXdp1s
+Commands:
+bcdedit
+bootrec /fixmbr
+bootrec /fixboot (if you get error? type) bootsect /nt60 sys
+now type bootrec /fixboot
+diskpart
+list disk
+select disk 0 make sure its your windows drive
+list volume (find system volume it will be fat32 hidden)
+select volume 3  
+(make sure its the fat32 volume and change number of volume to your number)
+assign letter=n (Make sure your not using N: drive letter)
+exit
+n: (Change to your drive letter)
+cd efi
+cd Microsoft 
+cd boot
+attrib bcd -h -r -s
+ren bcd bcd32.old
+bootrec /rebuildbcd
+type A
+bcdboot c:\windows /s n: /f UEFI
+Now boot to windows.
+
+--------------------------------------------------------
+
+Fix UEFI Partition When Windows 10 and 11 Won't Boot
+bcdedit /export c:\bcd.backup
+bcdedit
+
+go to advance option command prompt
+diskpart
+list disk
+then select disk
+list vol
+select vol 2
+assign letter = z // if didn't show drive name 
+list vol
+exit
+z:
+cd efi
+cd boot
+c:
+format z: /fs:fat32
+y
+enter
+
+C:\>bcdboot c:\windows /s z: /f UEFI
+
+
+
+
+
+
+
+
+
+
+
