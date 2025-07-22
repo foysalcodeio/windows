@@ -33,6 +33,13 @@ mbr to gpt
 6. exit
 7. exit
 
+mbr to gpt
+---------------
+Run as administrator cmd
+mbr2gpt /validate /disk:0 /allowFullOS
+mbr2gpt /convert /disk:0 /allowFullOS
+
+
 
 keep knowledge
 --------------------
