@@ -54,7 +54,14 @@ Preplan:
 
 windows setup next step
 -------------------------
-1. install driver
+1. .net activator - 
+	Dism.exe /online /enable-feature /featurename:NetFX3 /All /Source:D:\sources\sxs /LimitAccess
+									  |
+									  -> Here is drive file location where is my file store. you can put anywhere
+									  -> pendrive source file boothable file
+3. windows update
+3. install driver
+
 
 
 
