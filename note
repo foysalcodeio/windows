@@ -43,7 +43,7 @@ mbr2gpt /convert /disk:0 /allowFullOS
 
 keep knowledge
 --------------------
-	    [DISK MODE] - changleble	     |		[BIOS MODE] - Not changeble
+[HDD Partition format] - changleble	     |		[BIOS MODE] - Not changeble
 old system : MBR			-----------> 	LEGACY (old) OR UEFI (new)
 new system : GPT 			-----------> 	UEFI
 	
