@@ -24,6 +24,7 @@ regidit ->HKEY_LOCAL_Machine -> system -> setup -> new -> key
 
 mbr to gpt
 -----------
+[if mbr to gpt try to active = bitlocker = ]
 1. diskpart
 2. list disk
 3. select disk 0
