@@ -54,7 +54,8 @@ Preplan:
 1. Ensure your BIOS/UEFI settings are configured to boot from USB
 2. rename c drive 
 3. look and memorize c drive space
-4. look drive or look c Disk management what are build gpt or mbr ---> target UEFI System
+4. look drive or look c Disk management what are build gpt or mbr ---> target UEFI System -> secure booth system on or off -> motherboard company name
+[keep in mind secure booth must be disable ! ]
 5. check boot priority -> select pendrive
 
 
