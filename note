@@ -5,6 +5,16 @@ windows active
 irm https://get.activated.win |iex
 
 
+if slow pc
+mdsched
+or
+chkdsk c: /f /r
+
+if your pc hack
+netplwiz
+
+
+
 bios mode setting : shutdown /r /fw /t
 
 windows 11 supported
