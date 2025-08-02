@@ -13,6 +13,10 @@ chkdsk c: /f /r
 if your pc hack
 netplwiz
 
+if you get blue screen solve the problem
+------------------------------------------
+DISM /online /Cleanup-Image /CheckHealth
+
 
 
 bios mode setting : shutdown /r /fw /t
