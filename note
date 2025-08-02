@@ -17,7 +17,7 @@ if you get blue screen solve the problem
 ------------------------------------------
 DISM /online /Cleanup-Image /CheckHealth
 
-
+pc performance : run : systempropertiesperformance
 
 bios mode setting : shutdown /r /fw /t
 
