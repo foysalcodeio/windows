@@ -8,6 +8,7 @@ sigverif
 sfc /scannow
 
 
+network command run : ncpa.cpl
 
 setup windows 11 account create problem
 cmd -> start ms-cxh:localonly
