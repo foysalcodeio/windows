@@ -14,3 +14,7 @@ setup windows 11 account create problem
 cmd -> start ms-cxh:localonly
 
 
+all software update
+------------------------
+winget upgrade 
+winget upgrade --all
