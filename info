@@ -1,0 +1,9 @@
+tpm present check
+run -> tpm.msc 
+
+VRAM check
+ex:1 - wmic path win32_VideoController get name, AdapterRAM
+ex:2 - wmic path win32_VideoController get name, AdapterCompatibility, VideoProcessor, AdapterRAM, DriverVersion
+ex:3 - dxdiag
+Press Enter
+Go to the Display tab → Look for Display Memory (VRAM).
