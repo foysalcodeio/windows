@@ -1,4 +1,5 @@
-DISM /Online /Set-OSUninstallWindow /value:60
+DISM /Online /Set-OSUninstallWindow /Value:60
+
 
 tpm present check
 run -> tpm.msc 
