@@ -23,6 +23,9 @@ net stop dosvc
 echo Disabling Delivery Optimization Service...
 sc config dosvc start= disabled
 
+echo Check the service active or not
+
+
 echo.
 echo ✅ Windows Update has been completely disabled.
 echo Restart your computer to apply the changes.
