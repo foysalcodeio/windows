@@ -1,0 +1,36 @@
+
+
+Run : services.msc
+windows update -> disable
+
+Run : regedit
+Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows
+
+new -> key - given name : WindowsUpdate
+make subfolder
+new -> key - given name : AU
+
+New -> DWORD(32bit) Value
+make registry
+NoAutoUpdate
+value - 1 base must be Hexadecimal
+
+===========================================================
+
+Local Group Policy
+Administrative Templates -> Windows Components -> Windows update
+Configure Automatice Update -> Disable
+
+
+Run : services.msc
+windows update -> Startup type -> disable
+	            -> Recovery -> Take no action
+			-> Reset fail Count - 500
+
+set as metered connection
+on
+
+
+
+
+
